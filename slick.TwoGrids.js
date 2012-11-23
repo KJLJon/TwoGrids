@@ -1,12 +1,8 @@
 /**
- * @license
- * (c) 2012 Jonathan Lietzau
- * http://github.com/KJLJon/TwoGrids
- *
- * Distributed under MIT license.
- * All rights reserved.
- *
  * TwoGrids v0.2
+ * Copyright (C) 2012 Jonathan Lietzau
+ *
+ * MIT License - http://github.com/KJLJon/TwoGrids/license
  */
 (function($){
 	var loader = false;
