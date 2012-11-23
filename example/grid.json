@@ -1,0 +1,143 @@
+{
+	"data": [
+		{
+			"content": "For those who are having trouble understanding what this is about.  This is not about creating a competing closed platform.  This is about creating a standard platform for selling music online.  Imagine iTunes but with the ability to add other music stores into it.  So when you want to buy a song, you can browse this music store or that music store.  And all will work with your mp3 player.  Whether it is a basic one that mounts as an external usb drive, or one that is able to sync the songs up the way iTunes does it with the iPod.  And we know it is gonna be good because the guy that is driving it worked at Apple, so he knows what quality is.  Im sure it will have the ability to import or export your music library to iTunes if you so choose.  But the point is that it is trying to create a standard that any device maker can follow.  And hopefully, it will have no drm.  Otherwise its as useless as iTunes with its drm.\n\nRemember the same thing happened when windows 3.1 came along and immediately sold as many as 10x the number of pcs compared to macs at the time.  Anytime there is an open standard, no matter how good the closed standard is, the open one wins because that means lower prices for consumers since any manufacturer can use it.  Apple thrives on closed standards when it comes to selling their products because it enables them to lock their customers in.  And before they know it, theyre locked into it and can get out of it without great expense.\n\nI know that the Apple fanbois are gonna bury me for this, but Ill say it anyways.  It was nice being on top.  But you can be on top forever.",
+			"date": 1219163527,
+			"down": 0,
+			"id": 17963749,
+			"level": 0,
+			"replies": 0,
+			"replyto": "None",
+			"root": 17963749,
+			"story": 8038250,
+			"up": 1,
+			"user": "pyrates"
+		},
+		{
+			"content": "@thinkdifferent: I should of specified its a $1 cheaper when you buy the full album. Single tracks are the same price but albums are usually about $8.99. ",
+			"date": 1219159148,
+			"down": 0,
+			"id": 17961525,
+			"level": 0,
+			"replies": 0,
+			"replyto": "None",
+			"root": 17961525,
+			"story": 8038250,
+			"up": 1,
+			"user": "mrgermy"
+		},
+		{
+			"content": "Zune XPS w/ Vista Ultimate combo deal.",
+			"date": 1219146354,
+			"down": 0,
+			"id": 17956943,
+			"level": 0,
+			"replies": 0,
+			"replyto": "None",
+			"root": 17956943,
+			"story": 8038250,
+			"up": 1,
+			"user": "hurdboy"
+		},
+		{
+			"content": "Digg: Dell vs. Apple: This Time its Personal\nBusiness Week: Bucher says his quest to challenge Apple is all business and not personal.\n\nBurried as inacurate.",
+			"date": 1219134278,
+			"down": 0,
+			"id": 17954900,
+			"level": 0,
+			"replies": 0,
+			"replyto": "None",
+			"root": 17954900,
+			"story": 8038250,
+			"up": 1,
+			"user": "KAMiKAZOW"
+		},
+		{
+			"content": "Dell is junk and Apple is overpriced",
+			"date": 1219117388,
+			"down": 0,
+			"id": 17950148,
+			"level": 0,
+			"replies": 0,
+			"replyto": "None",
+			"root": 17950148,
+			"story": 8038250,
+			"up": 1,
+			"user": "DeuceDiggalow"
+		},
+		{
+			"content": "Dell, all you have to do to kick apple in the jewels is get your act together with Ubuntu.\n\nAmarok will do the rest.",
+			"date": 1219112434,
+			"down": 2,
+			"id": 17948056,
+			"level": 0,
+			"replies": 4,
+			"replyto": "None",
+			"root": 17948056,
+			"story": 8038250,
+			"up": 3,
+			"user": "ethana2"
+		},
+		{
+			"content": "Apple = Overpriced, under-featured, but pretty\nDell = priced right, full-featured, and awesome looking",
+			"date": 1219105961,
+			"down": 8,
+			"id": 17945330,
+			"level": 0,
+			"replies": 2,
+			"replyto": "None",
+			"root": 17945330,
+			"story": 8038250,
+			"up": 3,
+			"user": "freesf"
+		},
+		{
+			"content": "Go Dell! Best of luck to you :)",
+			"date": 1219104145,
+			"down": 0,
+			"id": 17944493,
+			"level": 0,
+			"replies": 0,
+			"replyto": "None",
+			"root": 17944493,
+			"story": 8038250,
+			"up": 0,
+			"user": "Sabre24q7"
+		},
+		{
+			"content": "Actually the Dell DJ wasnt that bad for its time. Obviously now its looks very dated and far from the best now, but at its time it was a decent player and had pretty good sound quality. It also had more features than the ipod does even today.\n\n Creative was the people who made it and it was a very basic player but it did what it was suppose to and had a lot of room on it for a cheap price. ",
+			"date": 1219104085,
+			"down": 2,
+			"id": 17944474,
+			"level": 0,
+			"replies": 1,
+			"replyto": "None",
+			"root": 17944474,
+			"story": 8038250,
+			"up": 1,
+			"user": "jsc315"
+		},
+		{
+			"content": "Im not saying this will or won succeed. Im just pointing out something people seem to be missing.\n\nJust because Dell customers aren pompous and loudmouthed doesn mean they aren loyal and happy customers. There are a LOT of Dell users that like the company and what the products they make.",
+			"date": 1219102724,
+			"down": 1,
+			"id": 17943861,
+			"level": 0,
+			"replies": 1,
+			"replyto": "None",
+			"root": 17943861,
+			"story": 8038250,
+			"up": 2,
+			"user": "Urkel"
+		}
+	],
+	"count": 10,
+	"offset": 0,
+	"timestamp": 1219168299,
+	"total": 400,
+	"columns":[
+		{"id": "index", "name": "#", "field": "index", "width": 40, "visible": false, "resizable": false},
+		{"id": "content", "name": "Comments", "field": "content", "width": 300, "cssClass": "cell-story", "resizable": false},
+		{"id": "up", "name": "Ups", "field": "up", "width": 60, "sortable": true, "resizable": false}
+	]
+}

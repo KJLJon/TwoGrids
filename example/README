@@ -1,0 +1,7 @@
+Copy all of the files in this directory into your local install of SlickGrid's example folder
+
+Copy slick.TwoGrids.js into SlickGrid's plugins folder
+
+I know it's kind of a bad example (because it pulls from a static JSON file).
+
+but normally a webserver would feed the information

@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <title>Slickgd example: TwoGrids</title>
+  <link rel="stylesheet" href="../slick.grid.css" type="text/css"/>
+  <link rel="stylesheet" href="../css/smoothness/jquery-ui-1.8.16.custom.css" type="text/css"/>
+  <link rel="stylesheet" href="examples.css" type="text/css"/>
+  <style>
+	.cell-story {
+		white-space: normal !important;
+		line-height: 19px !important;
+	}
+
+	.loading-indicator {
+		display: inline-block;
+		padding: 12px;
+		background: white;
+		-opacity: 0.5;
+		color: black;
+		font-weight: bold;
+		z-index: 9999;
+		border: 1px solid red;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+		-moz-box-shadow: 0 0 5px red;
+		-webkit-box-shadow: 0px 0px 5px red;
+		-text-shadow: 1px 1px 1px white;
+	}
+
+	.loading-indicator label {
+		padding-left: 20px;
+		background: url('../images/ajax-jxm-small.gif') no-repeat center left;
+	}
+
+	.cell-selection {
+		border-right-color: silver;
+		border-right-style: solid;
+		background: #f5f5f5;
+		color: gray;
+		text-align: right;
+		font-size: 10px;
+	}
+
+	.slick-row.selected .cell-selection {
+		background-color: transparent; /* show default selected row background */
+	}
+
+	html,body{
+		overflow:hidden;padding:0;margin:0;
+		background-color:#eee
+	}
+  </style>
+</head>
+<body>
+<div style="top:5px;left:5px;right:5px;height:59%;position:absolute;">
+	<div id="tg" style="width:100%;top:0;bottom:0;position:absolute"></div>
+</div>
+<div id="bg" style="width:49%;right:5px;bottom:5px;top:61%;position:absolute"></div>
+<div id="form" style="background-color:white;width:49%;left:5px;bottom:5px;top:61%;position:absolute">
+	This is to put some sort of other data
+</div>
+
+<script src="../lib/jquery-1.7.min.js"></script>
+<script src="../lib/jquery-ui-1.8.16.custom.min.js"></script>
+<script src="../lib/jquery.event.drag-2.0.min.js"></script>
+
+<script src="../slick.core.js"></script>
+<script src="../plugins/slick.TwoGrids.js"></script>
+<script src="../slick.grid.js"></script>
+
+<script>
+$(function(){
+	var grids = new Slick.KJL.TwoGrid({url:'grid.json'});
+})
+</script>
+</body>
+</html>
