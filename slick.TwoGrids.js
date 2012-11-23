@@ -13,6 +13,7 @@
 
 	/**
 	 * AjaxModel
+	 * Allows for dynamically loading columns and data
 	 * 
 	 * JSON PUT:
 	 * 		from	(int)
@@ -62,7 +63,12 @@
 			data.length = 0;
 		}
 		
-		/** Ensures data range is loaded, loading if necessary. */
+		/**
+		 * ensureData based off:
+		 * http://stackoverflow.com/a/7634911
+		 * Updated to allow dynamic columns
+		 * Ensures data range is loaded, loading if necessary.
+		 */
 		function ensureData(from, to){
 			// Reduce range to only unloaded data by eliminating already loaded data at the extremes
 			// or data which is already being loaded by a pending request
@@ -222,6 +228,8 @@
 	
 	/**
 	 * RowSelectionModel
+	 * Most of the code is based off of
+	 * https://github.com/mleibman/SlickGrid/wiki/Handling-selection
 	 */
 	function RowSelectionModel(){
 		var grid;
