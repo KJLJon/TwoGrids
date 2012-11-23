@@ -452,6 +452,7 @@
 				_row = id;
 				var ajax = $.extend(true,{},_ajax);
 				ajax.params.id = id;
+				ajax.params.model = 'bottom';
 				if(_view != false){
 					ajax.params.view = _view;
 				}
@@ -466,7 +467,7 @@
 		}
 		
 		var _view = false;
-		var _ajax = {url:opts.url,params:{}};
+		var _ajax = {url:opts.url,params:{model:'top'}};
 		var _saveColumns = (opts.saveColumns!=false);
 		_saveColumns = {size: _saveColumns, order: _saveColumns, url: opts.saveColumns};
 		
