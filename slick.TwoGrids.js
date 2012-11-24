@@ -431,9 +431,11 @@
 			url: '',
 			top: '#tg',
 			bottom: '#bg',
+			topView: false,	//false or a string
+			bottomView: false, //false or a string
 			topGrid:{},
 			bottomGrid:{},
-			saveColumns:'url',//false or url to post to
+			saveColumns: '',//false or url to post to
 			topRightClick: function(){},
 			topDblClick: onClick,
 			bottomRightClick: function(){},
@@ -450,15 +452,16 @@
 				}
 			}else{
 				_row = id;
-				var ajax = $.extend(true,{},_ajax);
-				ajax.params.id = id;
-				ajax.params.model = 'bottom';
+				var ajax = {url:opts.url,params:{model:'bottom',id:id}};
+				var savecols = $.extend(true,{},_saveColumns);
+				saveCols.model='bottom';
 				if(_view != false){
 					ajax.params.view = _view;
+					savecols.params.view = _view;
 				}
 				bottom = new SingleGrid(opts.bottom, {
 					ajax: ajax,
-					saveColumns: _saveColumns,
+					saveColumns: savecols,
 					grid: opts.bottomGrid,
 					onRightClick: opts.bottomRightClick,
 					onDblClick: opts.bottomDblClick
@@ -466,14 +469,18 @@
 			}
 		}
 		
-		var _view = false;
+		var _view = opts.bottomView;
 		var _ajax = {url:opts.url,params:{model:'top'}};
+		if(opts.topView!=false){
+			_ajax.params.view=opts.topView;
+		}
 		var _saveColumns = (opts.saveColumns!=false);
-		_saveColumns = {size: _saveColumns, order: _saveColumns, url: opts.saveColumns};
+		_saveColumns = {size: _saveColumns, order: _saveColumns, url: opts.saveColumns, params: {model:'top'}};
+		var _saveCols = _saveColumns;
 		
 		var top = new SingleGrid(opts.top, {
 			ajax: _ajax,
-			saveColumns: _saveColumns,
+			saveColumns: _saveCols,
 			grid: opts.topGrid,
 			onRightClick: opts.topRightClick,
 			onClick: onClick,
@@ -493,6 +500,7 @@
 				_view = view;
 			},
 			setTopView: function(view){
+				_saveCols.params.view = view;
 				top.setView(view);
 			}
 		}
