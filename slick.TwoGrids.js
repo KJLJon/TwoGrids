@@ -454,7 +454,7 @@
 				_row = id;
 				var ajax = {url:opts.url,params:{model:'bottom',id:id}};
 				var savecols = $.extend(true,{},_saveColumns);
-				saveCols.model='bottom';
+				savecols.model='bottom';
 				if(_view != false){
 					ajax.params.view = _view;
 					savecols.params.view = _view;
