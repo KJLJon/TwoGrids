@@ -328,12 +328,19 @@
 			
 			//saves columns
 			var saveColumns = function(){
-				var columns=[];
-				for(var column in grid.getColumns()){
-					columns.push({field: column.field, width: column.width});
-				}
-				$.post(opts.saveColumns.url,$.extend({},opts.saveColumns.params,{order:opts.saveColumns.order,size:opts.saveColumns.size,columns:columns}),function(d){opts.onSave(d);});
-			}
+				$.post(
+					opts.saveColumns.url,
+					$.extend({},opts.saveColumns.params,{
+						order:opts.saveColumns.order,
+						size:opts.saveColumns.size,
+						columns:JSON.stringify(grid.getColumns())
+					}),
+					function(d){
+						opts.saveColumns.onSave(d);
+					}
+				);
+			};
+
 			
 			if(opts.saveColumns.order){
 				grid.onColumnsReordered.subscribe(saveColumns);
