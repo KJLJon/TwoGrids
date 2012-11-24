@@ -478,12 +478,13 @@
 		
 		var _view = opts.bottomView;
 		var _ajax = {url:opts.url,params:{model:'top'}};
-		if(opts.topView!=false){
-			_ajax.params.view=opts.topView;
-		}
 		var _saveColumns = (opts.saveColumns!=false);
 		_saveColumns = {size: _saveColumns, order: _saveColumns, url: opts.saveColumns, params: {model:'top'}};
-		var _saveCols = _saveColumns;
+		var _saveCols = $.extend({},_saveColumns);
+		if(opts.topView!=false){
+			_ajax.params.view=opts.topView;
+			_saveCols.params.view=opts.topView;
+		}
 		
 		var top = new SingleGrid(opts.top, {
 			ajax: _ajax,
