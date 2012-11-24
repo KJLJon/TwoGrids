@@ -332,7 +332,7 @@
 				for(var column in grid.getColumns()){
 					columns.push({field: column.field, width: column.width});
 				}
-				$.post(opts.saveColumns.url,$.extend({},opts.saveColumns.params,{order:opts.saveColumns.order,size:opts.saveColumns.size,columns:columns}),function(d){onSave(d);});
+				$.post(opts.saveColumns.url,$.extend({},opts.saveColumns.params,{order:opts.saveColumns.order,size:opts.saveColumns.size,columns:columns}),function(d){opts.onSave(d);});
 			}
 			
 			if(opts.saveColumns.order){
